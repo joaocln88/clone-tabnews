@@ -39,7 +39,7 @@ async function findUserByEmail(providedEmail) {
 async function validatePassword(providedPassword, storedPassword) {
   const correctPasswordMatch = await password.compare(
     providedPassword,
-    storedPassword
+    storedPassword,
   );
 
   if (!correctPasswordMatch) {
